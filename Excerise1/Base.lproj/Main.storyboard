@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Excerise1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JBJ-nT-ipP">
+                                <rect key="frame" x="16" y="60" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ced-ec-0OS">
+                                        <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="30"/>
+                                        <state key="normal" title="⬅️"/>
+                                        <connections>
+                                            <action selector="controlBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYd-lC-PIZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh2-QO-Jo0">
+                                        <rect key="frame" x="88.333333333333343" y="0.0" width="78.333333333333343" height="30"/>
+                                        <state key="normal" title="🔽"/>
+                                        <connections>
+                                            <action selector="controlBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHa-TW-SXg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KE9-9a-Ixz">
+                                        <rect key="frame" x="176.66666666666666" y="0.0" width="78" height="30"/>
+                                        <state key="normal" title="🔼"/>
+                                        <connections>
+                                            <action selector="controlBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nip-e5-Zq0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzf-nI-gG7">
+                                        <rect key="frame" x="264.66666666666669" y="0.0" width="78.333333333333314" height="30"/>
+                                        <state key="normal" title="▶️"/>
+                                        <connections>
+                                            <action selector="controlBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYU-Ww-7cE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YiX-QW-nP5">
+                                <rect key="frame" x="0.0" y="106" width="375" height="656"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgt-Im-sgQ">
+                                        <rect key="frame" x="0.0" y="8" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YiX-QW-nP5" secondAttribute="trailing" id="Aj3-Jo-reo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YiX-QW-nP5" secondAttribute="bottom" constant="16" id="Pjc-mX-ctk"/>
+                            <constraint firstItem="YiX-QW-nP5" firstAttribute="top" secondItem="JBJ-nT-ipP" secondAttribute="bottom" constant="16" id="Sws-sD-WTL"/>
+                            <constraint firstItem="JBJ-nT-ipP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XoY-pM-2Gg"/>
+                            <constraint firstItem="YiX-QW-nP5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="clQ-bk-V2L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JBJ-nT-ipP" secondAttribute="trailing" constant="16" id="lOg-x0-P3P"/>
+                            <constraint firstItem="JBJ-nT-ipP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="wuJ-Mf-M4M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="brick" destination="Tgt-Im-sgQ" id="zzB-W5-GqN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+</document>
